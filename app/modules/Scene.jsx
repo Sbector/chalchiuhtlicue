@@ -7,10 +7,10 @@ import Model from "./Model";
 export default function Scene() {
   return (
     <Canvas
-      camera={{ position: [0, 0, 50] }}
+      camera={{ position: [0, 1, 50] }}
       gl={{ toneMapping: ACESFilmicToneMapping, toneMappingExposure: 2.5 }}
     >
-      <ambientLight intensity={3} />
+      <ambientLight intensity={1} />
       <Model />
       <TrackballControls
         target={[0, 0, 0]}

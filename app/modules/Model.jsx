@@ -8,7 +8,7 @@ export default function Model() {
     ref.current.rotation.x += 0.015* delta
     ref.current.rotation.y += 0.015* delta
   })
-  const url = "./models/LOD2.glb";
+  const url = "./models/chalchiuhtlicueWeb.glb";
   const gltf = useGLTF(url);
   console.log(gltf);
 
@@ -17,7 +17,7 @@ export default function Model() {
       <primitive
         ref = {ref}
         object={gltf.scene}
-        position={[0, 0, 0]}
+        position={[0, -8, 0]}
         scale={[1, 1, 1]}
       />
     </Suspense>
