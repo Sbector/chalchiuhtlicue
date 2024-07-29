@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber"
 
 export default function Model() {
   
-  const url = "./models/chalchiuhtlicueWeb.glb";
+  const url = "./models/chalchiuhtlicue.glb";
   const gltf = useGLTF(url);
   console.log(gltf);
 
