@@ -16,8 +16,12 @@ export default function Scene() {
         target={[0, 0, 0]}
         minDistance={30}
         maxDistance={80}
-        noPan
-        rotateSpeed={0.1}
+        enablePan={false}
+        minPolarAngle={1.5}
+        maxPolarAngle={1.8}
+        maxAzimuthAngle={Math.PI/4}
+        minAzimuthAngle={Math.PI/4*-1}
+        rotateSpeed={0.15}
       />
     </Canvas>
   );
