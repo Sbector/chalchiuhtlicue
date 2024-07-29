@@ -1,6 +1,6 @@
 'use client'
 import { Canvas } from "@react-three/fiber";
-import { TrackballControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { ACESFilmicToneMapping } from "three";
 import Model from "./Model";
 
@@ -12,12 +12,12 @@ export default function Scene() {
     >
       <ambientLight intensity={1} />
       <Model />
-      <TrackballControls
+      <OrbitControls
         target={[0, 0, 0]}
         minDistance={30}
         maxDistance={80}
         noPan
-        rotateSpeed={4}
+        rotateSpeed={0.1}
       />
     </Canvas>
   );

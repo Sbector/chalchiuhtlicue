@@ -13,7 +13,7 @@ export default function Model() {
       <primitive
         
         object={gltf.scene}
-        position={[0, -8, 0]}
+        position={[0, -11, 0]}
         scale={[1, 1, 1]}
       />
     </Suspense>
